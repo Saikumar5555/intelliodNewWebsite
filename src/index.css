@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-slate-900 antialiased;
+    font-family: 'Montserrat', system-ui, sans-serif;
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(to right, #008DFF, #763AE5, #FF7627);
+  }
+
+  .gradient-text-blue-purple {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(to right, #008DFF, #763AE5);
+  }
+
+  .gradient-blue-purple {
+    background-image: linear-gradient(to right, #008DFF, #763AE5);
+  }
+
+  .gradient-cta {
+    background: linear-gradient(135deg, #008DFF 0%, #763AE5 50%, #FF7627 100%);
+  }
+
+  .eyebrow {
+    @apply text-xs font-bold uppercase tracking-widest;
+    background-image: linear-gradient(to right, #008DFF, #763AE5, #FF7627);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .btn-black {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-gray-900 text-white text-sm font-semibold rounded-full hover:bg-gray-800 transition-colors cursor-pointer;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-white text-gray-900 text-sm font-semibold rounded-full border border-gray-300 hover:border-gray-500 transition-colors cursor-pointer;
+  }
+
+  .card-rounded {
+    @apply rounded-2xl overflow-hidden;
+  }
+}

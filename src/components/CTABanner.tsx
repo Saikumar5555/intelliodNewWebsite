@@ -3,7 +3,7 @@ const CTABanner = () => {
 
   return (
     <section className="py-16 px-6 lg:px-8 bg-[#FCFCFE]">
-      <div className="max-w-[1280px] mx-auto">
+      <div className="max-w-[76rem] mx-auto">
         <div
           className="rounded-[40px] px-8 py-16 lg:py-20 text-center relative overflow-hidden shadow-md"
           style={{ background: 'linear-gradient(to right, #3876FD, #9D4EDD, #D95D62)' }}

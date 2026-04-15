@@ -29,7 +29,7 @@ const Hero = () => {
     <section 
       id="home" 
       className="min-h-[90vh] flex flex-col justify-center overflow-hidden" 
-      style={{ backgroundImage: 'linear-gradient(180deg, #D7EEFE 0%, #FFFFFF 100%)' }}
+      style={{ backgroundImage: 'linear-gradient(180deg, #D7EEFE 0%, #ffffffff 100%)' }}
     >
       <div className="max-w-[76rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">

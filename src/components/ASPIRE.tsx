@@ -26,11 +26,11 @@ const ASPIRE = () => {
                  AIRPORT INTELLIGENCE
                </span>
             </p>
-            <h2 className="text-4xl lg:text-5xl font-extrabold text-[#111827] mb-3 tracking-tight leading-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>ASPIRE</h2>
-            <h3 className="text-2xl lg:text-[1.75rem] font-bold text-[#1F2937] mb-5 leading-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#111827] mb-3 tracking-tight leading-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>ASPIRE</h2>
+            <h3 className="text-2xl lg:text-[1.75rem] font-semibold text-[#1F2937] mb-5 leading-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>
               Airport Spatial Platform for<br />Intelligent Real-time Eco-system
             </h3>
-            <p className="text-[#4B5563] text-sm lg:text-base leading-relaxed font-normal mb-8" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <p className="text-[#4B5563] text-sm lg:text-base leading-relaxed font-medium mb-8" style={{ fontFamily: 'Montserrat, sans-serif' }}>
               <span className="font-bold text-[#111827]">ASPIRE</span> is an advanced airport digital twin solution that transforms complex airport operations into a real-time, intelligent, and collaborative ecosystem. Built on proven platforms, it delivers unmatched operational insight, scalability, and compliance.
             </p>
             <a href="#" className="inline-flex items-center justify-center bg-[#18181B] text-white px-8 py-3 rounded-full font-bold hover:bg-gray-800 transition-colors">

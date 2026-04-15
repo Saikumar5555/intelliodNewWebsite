@@ -101,10 +101,9 @@ const IndustryCards = () => {
             {/* Top image */}
             <div className="h-[240px] sm:h-[280px] relative overflow-hidden bg-gray-100">
               <img
-                src="/images/NeuralFarms.jpg"
+                src="/images/neuralfarms.jpg"
                 alt="Neural Farms agriculture AI"
                 className="w-full h-full object-cover"
-                onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80' }}
               />
             </div>
 

@@ -54,7 +54,7 @@ const SectorsGrid = () => {
         </svg>
       </div>
 
-      <div className="max-w-screen-xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
+      <div className="max-w-[76rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-14 lg:mb-16">
           <p className="text-[18px] font-bold uppercase tracking-[0.2em] mb-4">
@@ -68,7 +68,7 @@ const SectorsGrid = () => {
         </div>
 
         {/* 4×2 Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10 lg:gap-x-8 lg:gap-y-12 max-w-[1100px] mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10 lg:gap-x-8 lg:gap-y-12 mx-auto">
           {sectors.map((sector) => (
             <div key={sector.name} className="flex flex-col items-center group cursor-pointer w-full">
               {/* Square rounded image */}

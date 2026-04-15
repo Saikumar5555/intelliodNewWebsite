@@ -52,7 +52,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer id="contact" className="bg-[#FCFCFE] border-t border-gray-200">
+    <footer id="contact" className="bg-[#FCFCFE] border-t border-gray-200" style={{ fontFamily: 'Montserrat, sans-serif' }}>
       <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 py-16 lg:py-20">
         <div className="flex flex-col xl:flex-row justify-between items-center gap-12 lg:gap-16 mb-20">
           
@@ -67,7 +67,7 @@ const Footer = () => {
           <div className="flex-1 w-full grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-4">
             {Object.entries(links).map(([col, items]) => (
               <div key={col}>
-                <h4 className="text-[17px] font-medium text-[#111827] mb-5">{col}</h4>
+                <h4 className="text-[17px] font-semibold text-[#111827] mb-5">{col}</h4>
                 <ul className="space-y-4">
                   {items.map(item => (
                     <li key={item}>

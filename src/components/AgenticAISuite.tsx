@@ -23,53 +23,31 @@ const PurpleRocketIcon = () => (
 
  const AgenticAISuite = () => {
   return (
-    <section id="products" className="bg-white pt-24 pb-0">
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="products" className="bg-white pt-24 pb-0" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+      <div className="max-w-[76rem] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section header */}
         <div className="text-center mb-12 relative">
           
           {/* Abstract Decorations */}
           <div className="absolute left-8 lg:left-16 top-1/2 -translate-y-1/2 hidden md:block">
-            <svg width="84" height="84" viewBox="0 0 100 100" fill="none">
-              <path d="M50 50 L10 20 C20 0, 40 10, 50 50 Z" fill="url(#grad1)" opacity="0.9"/>
-              <path d="M50 50 L10 80 C20 100, 40 90, 50 50 Z" fill="url(#grad2)" opacity="0.9"/>
-              <defs>
-                 <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1">
-                   <stop offset="0%" stopColor="#008DFF"/>
-                   <stop offset="100%" stopColor="#763AE5"/>
-                 </linearGradient>
-                 <linearGradient id="grad2" x1="0" y1="0" x2="1" y2="1">
-                   <stop offset="0%" stopColor="#763AE5"/>
-                   <stop offset="100%" stopColor="#FF7627"/>
-                 </linearGradient>
-              </defs>
-            </svg>
+            <img src="/images/Butterfly.png" alt="Butterfly decoration" width="84" height="84" className="object-contain" />
           </div>
           <div className="absolute right-8 lg:right-16 top-1/2 -translate-y-1/2 hidden md:block">
-            <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
-              <path d="M50 0 L58 35 L95 20 L65 45 L100 65 L60 62 L65 100 L45 65 L5 85 L35 55 L0 35 L40 40 Z" fill="url(#starGradient)" opacity="0.9" />
-              <defs>
-                 <linearGradient id="starGradient" x1="0" y1="0" x2="1" y2="1">
-                   <stop offset="0%" stopColor="#008DFF"/>
-                   <stop offset="50%" stopColor="#763AE5"/>
-                   <stop offset="100%" stopColor="#FF7627"/>
-                 </linearGradient>
-              </defs>
-            </svg>
+            <img src="/images/Explosion.png" alt="Explosion decoration" width="80" height="80" className="object-contain" />
           </div>
 
-          <p className="text-[13px] font-black uppercase tracking-[0.2em] mb-4">
+          <p className="text-[18px] font-bold uppercase tracking-[0.2em] mb-4">
              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#008DFF] via-[#763AE5] to-[#FF7627]">
                AGENTIC AI SUITE
              </span>
           </p>
-          <h2 className="text-4xl lg:text-5xl font-black text-[#1A1A24] leading-tight mb-5 tracking-tight">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#1A1A24] leading-[1.05] mb-5 tracking-tight">
              AI Agents That Work<br/>While You Sleep
           </h2>
           <p className="text-[#4B5563] max-w-2xl mx-auto text-[15px] font-medium leading-relaxed">
              Three purpose-built agentic AI products that automate outreach,<br className="hidden sm:block"/>
-             career building, and hospitality - <span className="text-transparent bg-clip-text font-bold" style={{ backgroundImage: 'linear-gradient(to right, #8d44c5, #c15b7f, #f97330)' }}>all under oneroof.</span>
+             career building, and hospitality - <span className="text-transparent bg-clip-text font-extrabold" style={{ backgroundImage: 'linear-gradient(to right, #8d44c5, #c15b7f, #f97330)' }}>all under oneroof.</span>
           </p>
         </div>
 
@@ -77,14 +55,14 @@ const PurpleRocketIcon = () => (
         <div className="grid lg:grid-cols-2 gap-8 mb-6">
           
           {/* OyeSell Card */}
-          <div className="bg-gradient-to-b from-[#FFF4EE] to-white rounded-3xl p-8 border border-[#FDE1D3] relative overflow-hidden flex flex-col justify-between min-h-[300px]">
+          <div className="bg-gradient-to-b from-[#FFF4EE] to-white rounded-3xl p-6 lg:p-8 border border-[#FDE1D3] relative overflow-hidden flex flex-col justify-between min-h-[280px] h-full">
             <div className="relative z-10 w-full sm:w-[60%]">
-              <h3 className="flex flex-wrap items-baseline gap-2 mb-6">
-                <span className="text-[32px] font-black text-[#111827] tracking-tight">OyeSell</span>
-                <span className="text-[17px] font-medium text-[#6B7280]"> – AI Sales Agent</span>
+              <h3 className="flex flex-wrap items-baseline gap-2 mb-4">
+                <span className="text-[32px] font-bold text-[#111827] tracking-tight">OyeSell</span>
+                <span className="text-[17px] font-semibold text-black"> – AI Sales Agent</span>
               </h3>
               
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-4 mb-6">
                 {[
                   'Instant lead engagement',
                   'WhatsApp + SMS outreach',
@@ -103,31 +81,31 @@ const PurpleRocketIcon = () => (
             </div>
             
             {/* Monkey Mascot Image */}
-            <div className="absolute right-0 bottom-0 w-[45%] h-[85%] z-0">
+            <div className="absolute right-0 top-[25%] w-[42%] h-[120%] z-0">
                <img 
                  src="/images/oyesell.png" 
                  alt="OyeSell AI Mascot" 
-                 className="w-full h-full object-contain object-bottom right-0 bottom-0 absolute"
+                 className="w-full h-full object-contain object-top"
                />
             </div>
           </div>
 
           {/* Oye Career Card */}
-          <div className="bg-gradient-to-b from-[#FFF9DD] to-white rounded-3xl p-8 border border-[#F3EAC6] relative overflow-hidden flex flex-col justify-between min-h-[300px]">
+          <div className="bg-gradient-to-b from-[#FFF9DD] to-white rounded-3xl p-6 lg:p-8 border border-[#F3EAC6] relative overflow-hidden flex flex-col justify-between min-h-[280px] h-full">
              <div className="relative z-10 w-full sm:w-[60%]">
-                <h3 className="flex flex-wrap items-baseline gap-2 mb-6">
-                  <span className="text-[32px] font-black text-[#111827] tracking-tight">Oye Career</span>
-                  <span className="text-[17px] font-medium text-[#6B7280]"> – AI Career Platform</span>
+                <h3 className="flex items-baseline gap-2 mb-4 whitespace-nowrap">
+                  <span className="text-[32px] font-bold text-[#111827] tracking-tight flex-shrink-0">Oye Career</span>
+                  <span className="text-[17px] font-semibold text-black flex-shrink-0"> – AI Career Platform</span>
                 </h3>
                 
-                <ul className="space-y-4 mb-8">
+                <ul className="space-y-4 mb-6">
                   {[
                     'AI resume builder & ATS matching',
                     'Portfolio website creation',
                     'AI cover letter assistant',
                   ].map(feature => (
                     <li key={feature} className="flex items-start gap-3 text-[15px] font-medium text-[#4B5563]">
-                      <PurpleRocketIcon />
+                      <img src="/images/Icon.png" alt="Icon" className="w-5 h-5 flex-shrink-0 mt-0.5" />
                       <span>{feature}</span>
                     </li>
                   ))}
@@ -139,11 +117,11 @@ const PurpleRocketIcon = () => (
              </div>
 
              {/* Resume Image */}
-             <div className="absolute -right-6 bottom-0 w-[55%] h-[75%] z-0">
+             <div className="absolute right-[-10%] top-[33%] w-[50%] h-[100%] z-0">
                  <img 
                    src="/images/resume.png" 
                    alt="Oye Career AI Platform" 
-                   className="w-full h-full object-contain object-bottom right-0 bottom-0 absolute origin-bottom-right"
+                   className="w-full h-full object-contain object-top"
                  />
              </div>
           </div>
@@ -151,10 +129,10 @@ const PurpleRocketIcon = () => (
 
         {/* Hospyra Card */}
         <div className="bg-white rounded-3xl border border-[#E5E7EB] shadow-[0_2px_10px_rgba(0,0,0,0.02)] overflow-hidden">
-          <div className="grid lg:grid-cols-[40%_60%] h-full">
+          <div className="grid lg:grid-cols-[30%_70%] h-full">
             
             {/* Hotel Image */}
-            <div className="h-64 lg:h-full">
+            <div className="h-56 lg:h-full">
               <img
                 src="/images/Hospyra.png"
                 alt="Hospyra Luxury Hotel Interior"
@@ -163,20 +141,20 @@ const PurpleRocketIcon = () => (
             </div>
 
             {/* Content Sidebar */}
-            <div className="p-8 lg:py-10 lg:px-14 flex flex-col justify-center bg-gradient-to-b from-[#F0F8FF] to-white h-full">
-              <h3 className="flex flex-wrap items-baseline gap-3 mb-8">
-                 <span className="text-[32px] font-black text-[#111827] tracking-tight">Hospyra</span>
-                 <span className="text-[19px] font-medium text-[#374151]"> – The Future of Hospitality</span>
+            <div className="p-6 lg:py-6 lg:px-12 flex flex-col justify-center bg-gradient-to-b from-[#F0F8FF] to-white h-full">
+              <h3 className="flex flex-wrap items-baseline gap-3 mb-4">
+                 <span className="text-[32px] font-bold text-[#111827] tracking-tight" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700 }}>Hospyra</span>
+                 <span className="text-[19px] text-[#374151]" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>– The Future of Hospitality</span>
               </h3>
 
-              <div className="grid sm:grid-cols-2 gap-x-6 gap-y-5 mb-10 w-full lg:w-11/12">
+              <div className="grid sm:grid-cols-2 gap-x-6 gap-y-3.5 mb-6 w-full">
                 {[
                   'AI Concierge & WhatsApp automation',
                   'Smart room control & personalization',
                   'AI-powered check-in & front desk',
                   'Predictive operations & analytics',
                 ].map(feature => (
-                  <div key={feature} className="flex items-start gap-3 text-[15px] font-medium text-[#4B5563]">
+                  <div key={feature} className="flex items-center gap-3 text-[15px] text-[#4B5563] whitespace-nowrap" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 500 }}>
                     <BlueCheckIcon />
                     <span>{feature}</span>
                   </div>
@@ -184,15 +162,15 @@ const PurpleRocketIcon = () => (
               </div>
 
               {/* Tagline Pill */}
-              <div className="inline-flex items-center gap-2 bg-[#F2F9F6] rounded-md px-5 py-3 mb-10 w-fit">
+              <div className="inline-flex items-center gap-2 bg-[#F2F9F6] rounded-md px-4 py-2 mb-6 w-fit">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-[#DE8633]">
                   <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="currentColor"/>
                 </svg>
-                <span className="text-[15px] font-bold text-[#4B5563]">Smarter Hotels • Happier Guests • Higher Revenue</span>
+                <span className="text-[15px] text-[#4B5563]" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700 }}>Smarter Hotels • Happier Guests • Higher Revenue</span>
               </div>
 
               <div>
-                <button className="bg-[#18181B] hover:bg-black text-white text-sm font-bold py-3 px-8 rounded-full transition-all inline-flex items-center gap-2">
+                <button className="bg-[#18181B] hover:bg-black text-white text-sm py-3 px-8 rounded-full transition-all inline-flex items-center gap-2" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 600 }}>
                   Explore Hospyra <span className="text-lg">→</span>
                 </button>
               </div>
@@ -207,17 +185,17 @@ const PurpleRocketIcon = () => (
         <div className="grid lg:grid-cols-2 items-stretch">
             
             {/* Left Content */}
-            <div className="px-6 py-10 lg:py-12 xl:py-16 sm:px-12 lg:px-16 xl:px-24 flex flex-col justify-center relative overflow-hidden bg-white z-0 h-full">
+            <div className="px-6 py-8 lg:py-10 xl:py-12 flex flex-col justify-center relative overflow-hidden bg-white z-0 h-full">
               {/* Glow effect */}
               <div className="absolute -top-32 -left-32 w-[600px] h-[600px] bg-gradient-to-br from-[#008DFF]/10 via-[#763AE5]/10 to-[#FF7627]/5 rounded-full blur-[80px] pointer-events-none -z-10"></div>
               
               <div className="relative z-10 w-full max-w-[560px] mx-auto lg:ml-auto lg:mr-12 xl:mr-24">
-                <p className="text-[13px] font-black uppercase tracking-[0.2em] mb-3">
+                <p className="text-[18px] font-bold uppercase tracking-[0.2em] mb-3">
                    <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#008DFF] via-[#763AE5] to-[#FF7627]">
                      AI EDUCATION
                    </span>
                 </p>
-                <h3 className="text-[40px] lg:text-[48px] font-black text-[#111827] leading-[1.1] mb-4 tracking-tight">
+                <h3 className="text-[40px] lg:text-[48px] font-bold text-[#111827] leading-[1.1] mb-4 tracking-tight">
                   Lexsyra – AI Tutor
                 </h3>
                 <p className="text-[#4B5563] text-[15px] font-medium leading-relaxed mb-6">
@@ -246,10 +224,10 @@ const PurpleRocketIcon = () => (
             </div>
 
             {/* Right Content */}
-            <div className="bg-[#2B6065] px-6 py-10 lg:py-12 xl:py-16 sm:px-12 lg:px-16 xl:px-24 flex flex-col justify-center relative overflow-hidden h-full">
+            <div className="bg-[#2B6065] px-6 py-8 lg:py-10 xl:py-12 flex flex-col justify-center relative overflow-hidden h-full">
               <div className="w-full max-w-[560px] mx-auto lg:mr-auto lg:ml-12 xl:ml-24 relative z-10">
                 {/* Image */}
-                <div className="mb-6 w-full overflow-hidden">
+                <div className="mb-4 w-full overflow-hidden">
                   <img 
                     src="/images/Lexsyra.jpg" 
                     alt="Lexsyra AI Learning" 
@@ -258,11 +236,11 @@ const PurpleRocketIcon = () => (
                 </div>
 
                 <h4 className="text-[26px] font-bold mb-2.5 tracking-tight text-white">Adaptive Learning Paths</h4>
-                <p className="text-white/80 text-[15px] leading-relaxed mb-6">
+                <p className="text-white/80 text-[15px] leading-relaxed mb-6 font-medium" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                   AI customizes every lesson based on student behavior, strengths, and learning speed for maximum effectiveness.
                 </p>
 
-                <div className="space-y-2.5">
+                <div className="space-y-2">
                   {[
                     { title: 'AI Avatar Tutor', desc: 'Human-like interaction • Voice-enabled guidance' },
                     { title: 'Live AI Feedback System', desc: 'Instant corrections • Smart suggestions' },
@@ -301,12 +279,12 @@ const PurpleRocketIcon = () => (
           {/* Right Content */}
           <div className="px-6 py-10 lg:py-12 xl:py-16 sm:px-12 lg:px-16 xl:px-24 flex flex-col justify-center relative overflow-hidden bg-white z-0 h-full">
             <div className="relative z-10 w-full max-w-[560px] mx-auto lg:ml-12 xl:ml-24 lg:mr-auto">
-              <p className="text-[13px] font-black uppercase tracking-[0.2em] mb-3">
+              <p className="text-[18px] font-bold uppercase tracking-[0.2em] mb-3">
                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#008DFF] via-[#763AE5] to-[#FF7627]">
                    INFRASTRUCTURE INTELLIGENCE
                  </span>
               </p>
-              <h3 className="text-[40px] lg:text-[48px] font-black text-[#111827] leading-[1.1] mb-4 tracking-tight">
+              <h3 className="text-[40px] lg:text-[48px] font-bold text-[#111827] leading-[1.1] mb-4 tracking-tight">
                 Digital Twin<br/>Technology
               </h3>
               <p className="text-[#4B5563] text-[15px] font-medium leading-relaxed mb-6">

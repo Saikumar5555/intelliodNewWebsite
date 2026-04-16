@@ -2,26 +2,26 @@ const CTABanner = () => {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
   return (
-    <section className="py-16 px-6 lg:px-8 bg-[#FCFCFE]">
+    <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-[#FCFCFE]">
       <div className="max-w-[76rem] mx-auto">
         <div
-          className="rounded-[40px] px-8 py-16 lg:py-20 text-center relative overflow-hidden shadow-md"
+          className="rounded-[28px] sm:rounded-[40px] px-6 sm:px-8 py-12 sm:py-16 lg:py-20 text-center relative overflow-hidden shadow-md"
           style={{ background: 'linear-gradient(to right, #3876FD, #9D4EDD, #D95D62)' }}
         >
           <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 pointer-events-none mix-blend-overlay"></div>
           
           <div className="relative z-10">
-            <h2 className="text-[36px] lg:text-[46px] font-bold text-white mb-4 tracking-tight leading-tight">
+            <h2 className="text-[28px] sm:text-[36px] lg:text-[46px] font-bold text-white mb-3 sm:mb-4 tracking-tight leading-tight">
               Ready to Deploy Intelligent AI?
             </h2>
-            <p className="text-white/90 text-[17px] lg:text-[19px] mb-10 max-w-[600px] mx-auto leading-relaxed font-medium" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-              Join 400+ enterprises scaling their operations with Intelliod's<br className="hidden md:block"/> autonomous ecosystem.
+            <p className="text-white/90 text-[15px] sm:text-[17px] lg:text-[19px] mb-8 sm:mb-10 max-w-[600px] mx-auto leading-relaxed font-medium" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+              Join 400+ enterprises scaling their operations with Intelliod's autonomous ecosystem.
             </p>
-            <div className="flex flex-wrap justify-center gap-5">
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-5">
               <a
                 href="#contact"
                 id="cta-banner-contact"
-                className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#3876FD] text-[15px] font-bold rounded-full hover:bg-gray-50 transition-all hover:-translate-y-0.5 shadow-sm"
+                className="inline-flex items-center justify-center px-6 sm:px-8 py-3.5 sm:py-4 bg-white text-[#3876FD] text-[14px] sm:text-[15px] font-bold rounded-full hover:bg-gray-50 transition-all hover:-translate-y-0.5 shadow-sm"
                 style={{ fontFamily: 'Montserrat, sans-serif' }}
               >
                 Contact Our Team
@@ -29,7 +29,7 @@ const CTABanner = () => {
               <button
                 onClick={scrollToTop}
                 id="cta-banner-top"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/30 text-white text-[15px] font-bold rounded-full transition-all hover:-translate-y-0.5 backdrop-blur-sm"
+                className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 bg-white/10 hover:bg-white/20 border border-white/30 text-white text-[14px] sm:text-[15px] font-bold rounded-full transition-all hover:-translate-y-0.5 backdrop-blur-sm"
                 style={{ fontFamily: 'Montserrat, sans-serif' }}
               >
                 Back to Top <span className="text-lg leading-none">↑</span>

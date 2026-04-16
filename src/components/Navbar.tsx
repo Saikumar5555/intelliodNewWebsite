@@ -20,7 +20,8 @@ const Navbar = () => {
               <a
                 key={link}
                 href={`#${link.toLowerCase()}`}
-                className="text-sm font-bold text-gray-700 hover:text-gray-900 transition-colors"
+                className="text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors"
+                style={{ fontFamily: 'Montserrat, sans-serif' }}
               >
                 {link}
               </a>
@@ -32,7 +33,7 @@ const Navbar = () => {
             <a
               href="#contact"
               id="navbar-book-demo"
-              className="inline-flex items-center gap-2 px-5 py-2 rounded-full border-2 border-gray-900 text-sm font-semibold text-gray-900 hover:bg-gray-900 hover:text-white transition-all"
+              className="inline-flex items-center gap-2 px-5 py-2 rounded-full border-2 border-gray-900 text-sm font-medium text-gray-900 hover:bg-gray-900 hover:text-white transition-all"
               style={{ fontFamily: 'Montserrat, sans-serif' }}
             >
               Book a demo <span>→</span>
@@ -61,7 +62,8 @@ const Navbar = () => {
               <a
                 key={link}
                 href={`#${link.toLowerCase()}`}
-                className="block px-4 py-2 text-sm font-bold text-gray-700 hover:text-gray-900"
+                className="block px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900"
+                style={{ fontFamily: 'Montserrat, sans-serif' }}
                 onClick={() => setMobileOpen(false)}
               >
                 {link}

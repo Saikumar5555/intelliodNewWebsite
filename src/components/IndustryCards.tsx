@@ -1,7 +1,7 @@
 import React from 'react';
 
 const BlueFeature = ({ text, icon }: { text: string; icon: React.ReactNode }) => (
-  <li className="flex items-center gap-3.5 mb-4 last:mb-0">
+  <li className="flex items-center gap-3.5 mb-3 last:mb-0">
     <div className="w-8 h-8 rounded-[8px] bg-[#EEF2FF] flex items-center justify-center flex-shrink-0 text-[#3B82F6]">
       {icon}
     </div>
@@ -10,7 +10,7 @@ const BlueFeature = ({ text, icon }: { text: string; icon: React.ReactNode }) =>
 );
 
 const GreenFeature = ({ text, icon }: { text: string; icon: React.ReactNode }) => (
-  <li className="flex items-center gap-3.5 mb-4 last:mb-0">
+  <li className="flex items-center gap-3.5 mb-3 last:mb-0">
     <div className="w-8 h-8 rounded-[8px] bg-[#F0FDF4] flex items-center justify-center flex-shrink-0 text-[#22C55E]">
       {icon}
     </div>
@@ -48,16 +48,16 @@ const NeuralTexts = [
 
 const IndustryCards = () => {
   return (
-    <section className="bg-gradient-to-b from-white via-white to-[#EEFDF4] pt-12 lg:pt-16 pb-20 lg:pb-24">
+    <section className="bg-gradient-to-b from-white via-white to-[#EEFDF4] pt-10 sm:pt-12 lg:pt-16 pb-14 sm:pb-20 lg:pb-24">
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-14 lg:mb-16">
-          <p className="text-[18px] font-bold uppercase tracking-[0.2em] mb-4">
+          <p className="text-[14px] sm:text-[18px] font-bold uppercase tracking-[0.2em] mb-3 sm:mb-4">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#008DFF] via-[#763AE5] to-[#FF7627]">
               INDUSTRY INTELLIGENCE
             </span>
           </p>
-          <h2 className="text-[36px] lg:text-[48px] font-bold text-[#111827] leading-tight tracking-tight">
+          <h2 className="text-[28px] sm:text-[36px] lg:text-[48px] font-bold text-[#111827] leading-tight tracking-tight">
             AI Built for Real-World Impact
           </h2>
         </div>
@@ -66,25 +66,24 @@ const IndustryCards = () => {
           {/* Aadya Card */}
           <div className="rounded-[2.5rem] overflow-hidden border border-[#E5E7EB] flex flex-col bg-white shadow-sm">
             {/* Top image */}
-            <div className="h-[240px] sm:h-[280px] relative overflow-hidden bg-gray-100">
+            <div className="h-[200px] sm:h-[240px] relative overflow-hidden bg-gray-100">
               <img
                 src="/images/Aadya.jpg"
                 alt="Aadya Private GPT enterprise AI"
                 className="w-full h-full object-cover"
-                onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&q=80' }}
               />
             </div>
 
             {/* Content */}
-            <div className="px-8 py-10 lg:px-10 lg:py-10 flex-1 flex flex-col items-start bg-white">
+            <div className="px-8 py-8 lg:px-10 lg:py-8 flex-1 flex flex-col items-start bg-white">
               <h3 className="text-[26px] font-bold text-[#111827] mb-2 leading-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                 Aadya <span className="font-bold text-black text-xl">– Private GPT</span>
               </h3>
-              <p className="text-[#6B7280] text-[15px] font-normal mb-8 leading-relaxed" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+              <p className="text-[#6B7280] text-[15px] font-normal mb-6 leading-relaxed" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                 Secure, scalable private AI for enterprises with on-prem deployment, advanced memory, and full compliance.
               </p>
               
-              <ul className="mb-10 w-full">
+              <ul className="mb-8 w-full">
                 {AadyaTexts.map((text, i) => (
                   <BlueFeature key={text} text={text} icon={AadyaIcons[i]} />
                 ))}
@@ -99,7 +98,7 @@ const IndustryCards = () => {
           {/* Neural Farms Card */}
           <div className="rounded-[2.5rem] overflow-hidden border border-[#E5E7EB] flex flex-col bg-white shadow-sm">
             {/* Top image */}
-            <div className="h-[240px] sm:h-[280px] relative overflow-hidden bg-gray-100">
+            <div className="h-[200px] sm:h-[240px] relative overflow-hidden bg-gray-100">
               <img
                 src="/images/neuralfarms.jpg"
                 alt="Neural Farms agriculture AI"
@@ -108,15 +107,15 @@ const IndustryCards = () => {
             </div>
 
             {/* Content */}
-            <div className="px-8 py-10 lg:px-10 lg:py-10 flex-1 flex flex-col items-start bg-white">
+            <div className="px-8 py-8 lg:px-10 lg:py-8 flex-1 flex flex-col items-start bg-white">
               <h3 className="text-[26px] font-bold text-[#111827] mb-2 leading-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                 Neural Farms <span className="font-bold text-black text-xl">– Agrintelligence</span>
               </h3>
-              <p className="text-[#6B7280] text-[15px] font-normal mb-8 leading-relaxed" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+              <p className="text-[#6B7280] text-[15px] font-normal mb-6 leading-relaxed" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                 AI-powered agriculture platform combining IoT, satellite data, and predictive analytics for smarter farming.
               </p>
               
-              <ul className="mb-10 w-full">
+              <ul className="mb-8 w-full">
                 {NeuralTexts.map((text, i) => (
                   <GreenFeature key={text} text={text} icon={NeuralIcons[i]} />
                 ))}

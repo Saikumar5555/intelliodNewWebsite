@@ -52,26 +52,30 @@ const Footer = () => {
   ];
 
   return (
-    <footer id="contact" className="bg-[#FCFCFE] border-t border-gray-200" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-      <div className="max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-12 py-16 lg:py-20">
-        <div className="flex flex-col xl:flex-row justify-between items-center gap-12 lg:gap-16 mb-20">
+    <footer id="contact" className="bg-white border-t border-gray-100 py-16" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+        {/* Main Footer Content */}
+        <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-8 items-center mb-16">
           
-          {/* Logo */}
+          {/* Logo Section */}
           <div className="flex-shrink-0">
-            <a href="#" className="inline-block">
-              <img src="/images/Logo.svg" alt="Intelliod Logo" className="h-16 w-auto" />
+            <a href="/" className="inline-block">
+              <img src="/images/Logo.svg" alt="Intelliod Logo" className="h-14 w-auto" />
             </a>
           </div>
 
-          {/* Link columns */}
-          <div className="flex-1 w-full grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-4">
+          {/* Link Columns */}
+          <div className="flex-grow flex flex-wrap lg:flex-nowrap justify-between gap-12 lg:gap-16 w-full lg:w-auto lg:px-8">
             {Object.entries(links).map(([col, items]) => (
-              <div key={col}>
-                <h4 className="text-[17px] font-semibold text-[#111827] mb-5">{col}</h4>
+              <div key={col} className="min-w-[140px]">
+                <h4 className="text-[17px] font-bold text-gray-900 mb-6">{col}</h4>
                 <ul className="space-y-4">
                   {items.map(item => (
                     <li key={item}>
-                      <a href="#" className="text-[15px] font-medium text-[#4B5563] hover:text-[#008DFF] transition-colors">
+                      <a 
+                        href="#" 
+                        className="text-[15px] font-medium text-gray-800 hover:text-[#008DFF] transition-colors whitespace-nowrap"
+                      >
                         {item}
                       </a>
                     </li>
@@ -81,14 +85,14 @@ const Footer = () => {
             ))}
           </div>
 
-          {/* Social icons row */}
-          <div className="flex-shrink-0 flex items-center gap-3">
+          {/* Social Icons Section */}
+          <div className="flex items-center gap-4">
             {socials.map((s, idx) => (
               <a
                 key={idx}
                 href={s.href}
                 aria-label={s.label}
-                className="w-10 h-10 rounded-[10px] border border-[#E5E7EB] hover:border-[#D1D5DB] flex items-center justify-center text-[#111827] hover:bg-gray-50 transition-all shadow-sm bg-white"
+                className="w-10 h-10 rounded-md border border-gray-100 flex items-center justify-center text-gray-900 hover:bg-gray-50 transition-all shadow-sm"
               >
                 {s.icon}
               </a>
@@ -96,9 +100,9 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom bar */}
-        <div className="text-center">
-          <p className="text-[15px] font-medium text-[#6B7280]">
+        {/* Bottom Bar */}
+        <div className="text-center pt-8 border-t border-gray-50">
+          <p className="text-[16px] font-medium text-[#707BB4]">
             © {year} Intelliod Pvt. Ltd. All rights reserved.
           </p>
         </div>

@@ -45,7 +45,7 @@ const sectors = [
 
 const SectorsGrid = () => {
   return (
-    <section className="bg-[#FCFCFE] py-20 lg:py-24 relative overflow-hidden" id="sectors">
+    <section className="bg-[#FCFCFE] py-14 sm:py-20 lg:py-24 relative overflow-hidden" id="sectors">
       {/* Decorative abstract blob top-right */}
       <div className="absolute top-0 right-0 pointer-events-none hidden md:block">
         <svg width="280" height="350" viewBox="0 0 280 350" fill="none" xmlns="http://www.w3.org/2000/svg" className="translate-x-[15%] -translate-y-[15%]">
@@ -57,18 +57,18 @@ const SectorsGrid = () => {
       <div className="max-w-[76rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-14 lg:mb-16">
-          <p className="text-[18px] font-bold uppercase tracking-[0.2em] mb-4">
+          <p className="text-[14px] sm:text-[18px] font-bold uppercase tracking-[0.2em] mb-3 sm:mb-4">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#008DFF] via-[#763AE5] to-[#FF7627]">
               SECTORS WE POWER
             </span>
           </p>
-          <h2 className="text-[36px] lg:text-[48px] font-bold text-[#111827] leading-tight tracking-tight">
+          <h2 className="text-[28px] sm:text-[36px] lg:text-[48px] font-bold text-[#111827] leading-tight tracking-tight">
             AI Across Every Critical Industry
           </h2>
         </div>
 
         {/* 4×2 Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10 lg:gap-x-8 lg:gap-y-12 mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 sm:gap-x-6 gap-y-8 sm:gap-y-10 lg:gap-x-8 lg:gap-y-12 mx-auto">
           {sectors.map((sector) => (
             <div key={sector.name} className="flex flex-col items-center group cursor-pointer w-full">
               {/* Square rounded image */}
@@ -81,7 +81,7 @@ const SectorsGrid = () => {
                 />
               </div>
               {/* Label below */}
-              <p className="text-[18px] lg:text-[20px] font-semibold text-[#111827] text-center tracking-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+              <p className="text-[14px] sm:text-[18px] lg:text-[20px] font-semibold text-[#111827] text-center tracking-tight" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                 {sector.name}
               </p>
             </div>
